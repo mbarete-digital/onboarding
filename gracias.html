@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>¡Datos recibidos! · Mbarete Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--brand:#6ee7b7;--brand-dark:#059669;--bg:#0a0a0f;--surface:#13131e;--border:#252535;--text:#e8e8f5;--muted:#8b8bb0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Nunito",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 20% 10%, rgba(110,231,183,.08) 0%, transparent 60%),radial-gradient(ellipse 50% 50% at 80% 80%, rgba(59,130,246,.06) 0%, transparent 60%)}
+.card{position:relative;z-index:1;max-width:620px;width:100%;background:var(--surface);border:1px solid var(--border);border-radius:22px;padding:38px 28px;text-align:center;box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.badge{display:inline-flex;align-items:center;gap:8px;font-family:"Syne",sans-serif;font-size:.85rem;font-weight:800;color:var(--brand);letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+.dot{width:8px;height:8px;border-radius:999px;background:var(--brand)}
+.icon{font-size:4.2rem;margin-bottom:14px}
+h1{font-family:"Syne",sans-serif;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;margin-bottom:14px}
+p{color:var(--muted);font-size:1rem;line-height:1.7;max-width:480px;margin:0 auto 12px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:800;transition:.2s ease}
+.btn-primary{background:linear-gradient(135deg,var(--brand-dark),var(--brand));color:#062010;box-shadow:0 10px 30px rgba(110,231,183,.18)}
+.btn-secondary{border:1px solid #2f2f45;color:var(--text);background:#171726}
+.btn:hover{transform:translateY(-2px)}
+.small{font-size:.82rem;margin-top:18px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge"><span class="dot"></span>Mbarete Digital</div>
+    <div class="icon">🎉</div>
+    <h1>¡Recibimos tus datos!</h1>
+    <p>Tu formulario fue enviado correctamente. Ahora vamos a revisar la información, el logo y las imágenes para empezar con tu página web.</p>
+    <p>En breve te contactamos por WhatsApp para confirmar los siguientes pasos.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Volver al formulario</a>
+      <a class="btn btn-secondary" href="https://wa.me/595986550235">Escribir por WhatsApp</a>
+    </div>
+    <p class="small">Ya no vas a caer en la página predeterminada de Netlify.</p>
+  </div>
+</body>
+</html>
